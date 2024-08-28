@@ -91,11 +91,5 @@ boarder_color = [255, 0, 0]
 # path = './output_images/octo_gw.png'
 # cv.imwrite(path,img)
 
-def write(img,
-          text,
-          org(50,50),
-          font=cv.FONT_HERSHEY_SIMPLEX,
-          fontScale=1,
-          color=(255,0,0),
-          thickness=2,
-          line_type=cv.LINE_AA):
+def write(img, text, org(50,50), font=cv.FONT_HERSHEY_SIMPLEX, fontScale=1,  color=(255,0,0), thickness=2, line_type=cv.LINE_AA):
+   print("hello")
