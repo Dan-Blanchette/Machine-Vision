@@ -26,7 +26,7 @@ np_distance = np.array(loaded_distance)
 
 
 # read a distorted iamge
-img_distorted = cv.imread('images/img0_distorted.png')
+img_distorted = cv.imread('images/img2_distorted.png')
 h, w = img_distorted.shape[:2]
 # use JSON values to and image matrix to pre-process the distorted image
 newcameramtx, roi = cv.getOptimalNewCameraMatrix(np_matrix, np_distance, (w,h), 1, (w,h))
@@ -37,4 +37,4 @@ dst = cv.undistort(img_distorted, np_matrix, np_distance, None, newcameramtx)
 # crop the image
 x, y, w, h = roi
 dst = dst[y:y+h, x:x+w]
-cv.imwrite('images/img0_undistorted_img.png', dst)
+cv.imwrite('images/img2_undistorted_img.png', dst)
