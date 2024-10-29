@@ -96,4 +96,4 @@ def contours():
 # sobel()
 # canny()
 # auto_canny()
-contours()
+# contours()
